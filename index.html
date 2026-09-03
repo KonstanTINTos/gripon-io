@@ -18,9 +18,10 @@ a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
 .brand{font-weight:700;letter-spacing:.12em;font-size:.95rem}
 .nav{display:flex;align-items:center;gap:1.5rem;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
 .nav .links{display:flex;gap:1.25rem}
-.nav [aria-current]{opacity:.55}
-.nav .lang{opacity:.85}
-.nav .lang a,.nav .lang span{padding:0 .1em}
+.nav .links [aria-current]{opacity:.55}
+.nav .lang strong{font-weight:700}
+.nav .lang a{opacity:.6;text-decoration:underline;text-underline-offset:.25em;text-decoration-thickness:1px}
+.nav .lang a:hover{opacity:1}
 
 .footer{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;padding:1.25rem 1.5rem;font-size:.75rem;letter-spacing:.04em;opacity:.7}
 .footer a:hover{opacity:1}
@@ -49,6 +50,15 @@ a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
 }
 @media (prefers-reduced-motion:reduce){.home .bg{display:none}.home{background:#000 url(/media/poster.jpg) center/cover}}
 
+/* Contact form */
+.contact{display:grid;gap:1rem;margin:1.5rem 0}
+.contact label{display:grid;gap:.35rem;font-size:.9rem;font-weight:600}
+.contact input,.contact textarea{font:inherit;font-weight:400;padding:.65rem .75rem;border:1px solid #ccc;border-radius:6px;background:#fff;color:#111}
+.contact input:focus,.contact textarea:focus{outline:2px solid #111;outline-offset:1px;border-color:#111}
+.contact button{justify-self:start;font:inherit;font-weight:600;padding:.7rem 1.4rem;border:0;border-radius:6px;background:#111;color:#fff;cursor:pointer}
+.contact button:hover{background:#333}
+.small{font-size:.85rem;color:#555}
+
 </style>
 
 </head>
@@ -58,11 +68,11 @@ a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
   <source src="/media/hero.mp4" type="video/mp4">
 </video>
 <div class="scrim"></div>
-<header class="top"><a class="brand" href="/">GRIPON</a><nav class="nav"><span class="links"><a href="/" aria-current=page>Home</a><a href="/privacy-statement.html" >Privacy</a></span><span class="lang"><a href="https://www.gripon.nl/" hreflang="nl">NL</a> / <span aria-current="true">EN</span></span></nav></header>
+<header class="top"><a class="brand" href="/">GRIPON</a><nav class="nav"><span class="links"><a href="/" aria-current=page>Home</a></span><span class="lang"><a href="https://www.gripon.nl/" hreflang="nl">NL</a> / <strong aria-current="true" title="EN">EN</strong></span></nav></header>
 <main class="hero">
   <h1>Get a GRIPON</h1>
   <p class="tagline">We do for digital infrastructure what the ECB does for money: it only exists because everyone believes it exists. The difference is that our fiction actually works. Eindhoven is no coincidence. Neither is Frankfurt.</p>
 </main>
-<footer class="footer"><span>&copy; GRIPON BV</span><a href="/privacy-statement.html">Privacy</a><a href="mailto:ks5515@pm.me">ks5515@pm.me</a></footer>
+<footer class="footer"><span>&copy; GRIPON BV</span><a href="/privacy-statement.html">Privacy</a><a href="/contact.html">Contact</a></footer>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>404</title>
+<title>Contact – GRIPON</title>
 <meta name="theme-color" content="#000000">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>
@@ -62,5 +62,23 @@ a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
 </style>
 
 </head>
-<body class="page"><header class="top"><a class="brand" href="/">GRIPON</a><nav class="nav"><span class="links"><a href="/" >Home</a></span><span class="lang"><a href="https://www.gripon.nl/" hreflang="nl">NL</a> / <strong aria-current="true" title="EN">EN</strong></span></nav></header>
-<main class="prose"><h1>404</h1><p><a href="/">Home</a></p></main><footer class="footer"><span>&copy; GRIPON BV</span><a href="/privacy-statement.html">Privacy</a><a href="/contact.html">Contact</a></footer></body></html>
+<body class="page">
+<header class="top"><a class="brand" href="/">GRIPON</a><nav class="nav"><span class="links"><a href="/" >Home</a></span><span class="lang"><a href="https://www.gripon.nl/" hreflang="nl">NL</a> / <strong aria-current="true" title="EN">EN</strong></span></nav></header>
+<main class="prose">
+<h1>Contact</h1>
+<p>Send us a message using this form. We will reply as soon as possible.</p>
+<form class="contact" action="https://formspree.io/f/mnpqvrjj" method="POST">
+  <input type="hidden" name="_subject" value="Contact via www.gripon.io">
+  <input type="hidden" name="_language" value="en">
+  <input type="hidden" name="_next" value="https://www.gripon.io/bedankt.html">
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+  <label>Name<input type="text" name="name" required autocomplete="name"></label>
+  <label>E-mail address<input type="email" name="email" required autocomplete="email"></label>
+  <label>Message<textarea name="message" rows="6" required></textarea></label>
+  <button type="submit">Send</button>
+</form>
+<p class="small">This form is protected against spam. Your details are only used to reply to your message.</p>
+</main>
+<footer class="footer"><span>&copy; GRIPON BV</span><a href="/privacy-statement.html">Privacy</a><a href="/contact.html">Contact</a></footer>
+</body>
+</html>

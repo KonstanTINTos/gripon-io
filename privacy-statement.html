@@ -18,9 +18,10 @@ a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
 .brand{font-weight:700;letter-spacing:.12em;font-size:.95rem}
 .nav{display:flex;align-items:center;gap:1.5rem;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
 .nav .links{display:flex;gap:1.25rem}
-.nav [aria-current]{opacity:.55}
-.nav .lang{opacity:.85}
-.nav .lang a,.nav .lang span{padding:0 .1em}
+.nav .links [aria-current]{opacity:.55}
+.nav .lang strong{font-weight:700}
+.nav .lang a{opacity:.6;text-decoration:underline;text-underline-offset:.25em;text-decoration-thickness:1px}
+.nav .lang a:hover{opacity:1}
 
 .footer{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;padding:1.25rem 1.5rem;font-size:.75rem;letter-spacing:.04em;opacity:.7}
 .footer a:hover{opacity:1}
@@ -49,17 +50,26 @@ a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
 }
 @media (prefers-reduced-motion:reduce){.home .bg{display:none}.home{background:#000 url(/media/poster.jpg) center/cover}}
 
+/* Contact form */
+.contact{display:grid;gap:1rem;margin:1.5rem 0}
+.contact label{display:grid;gap:.35rem;font-size:.9rem;font-weight:600}
+.contact input,.contact textarea{font:inherit;font-weight:400;padding:.65rem .75rem;border:1px solid #ccc;border-radius:6px;background:#fff;color:#111}
+.contact input:focus,.contact textarea:focus{outline:2px solid #111;outline-offset:1px;border-color:#111}
+.contact button{justify-self:start;font:inherit;font-weight:600;padding:.7rem 1.4rem;border:0;border-radius:6px;background:#111;color:#fff;cursor:pointer}
+.contact button:hover{background:#333}
+.small{font-size:.85rem;color:#555}
+
 </style>
 
 </head>
 <body class="page">
-<header class="top"><a class="brand" href="/">GRIPON</a><nav class="nav"><span class="links"><a href="/" >Home</a><a href="/privacy-statement.html" aria-current=page>Privacy</a></span><span class="lang"><a href="https://www.gripon.nl/" hreflang="nl">NL</a> / <span aria-current="true">EN</span></span></nav></header>
+<header class="top"><a class="brand" href="/">GRIPON</a><nav class="nav"><span class="links"><a href="/" >Home</a></span><span class="lang"><a href="https://www.gripon.nl/" hreflang="nl">NL</a> / <strong aria-current="true" title="EN">EN</strong></span></nav></header>
 <main class="prose">
 <h1>Privacy Statement</h1>
-<p>GRIPON BV, located at Torenallee 20, 5617 BC Eindhoven, is responsible for the processing of personal data as described in this privacy statement. Questions about privacy can be sent to <a href="mailto:ks5515@pm.me">ks5515@pm.me</a>.</p>
+<p>GRIPON BV, located at Torenallee 20, 5617 BC Eindhoven, is responsible for the processing of personal data as described in this privacy statement. Questions about privacy can be submitted via <a href="/contact.html">the contact form</a>.</p>
 
 <h2>This website</h2>
-<p>This website is a static information page. No cookies are placed, visitor behaviour is not tracked and no data is shared with advertising or analytics services. The hosting provider may temporarily keep server logs for technical and security reasons (such as IP address, time and requested page); GRIPON BV does not use this data for any other purpose.</p>
+<p>This website is a static information page. No cookies are placed, visitor behaviour is not tracked and no data is shared with advertising or analytics services. The hosting provider may temporarily keep server logs for technical and security reasons (such as IP address, time and requested page); GRIPON BV does not use this data for any other purpose. Messages sent via the contact form are processed by Formspree (Formspree Inc., USA) and forwarded to us by e-mail; the form is protected against spam with reCAPTCHA (Google).</p>
 
 <h2>Personal data we process</h2>
 <p>GRIPON BV only processes personal data that you provide to us yourself, for example by contacting us or by using our services. This usually concerns your name, e-mail address, phone number, address details and the content of our correspondence.</p>
@@ -74,11 +84,11 @@ a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
 <p>GRIPON BV does not sell your data to third parties and only provides it if this is necessary for the execution of our agreement with you or to comply with a legal obligation. We conclude a data processing agreement with parties that process data on our behalf.</p>
 
 <h2>Your rights</h2>
-<p>You have the right to access, correct or delete your personal data, to withdraw your consent, to object to processing and to data portability. Requests can be sent to <a href="mailto:ks5515@pm.me">ks5515@pm.me</a>. We will respond as soon as possible, and within four weeks at the latest. You may also file a complaint with the Dutch Data Protection Authority (<a href="https://autoriteitpersoonsgegevens.nl/en" rel="noopener">Autoriteit Persoonsgegevens</a>).</p>
+<p>You have the right to access, correct or delete your personal data, to withdraw your consent, to object to processing and to data portability. Requests can be submitted via <a href="/contact.html">the contact form</a>. We will respond as soon as possible, and within four weeks at the latest. You may also file a complaint with the Dutch Data Protection Authority (<a href="https://autoriteitpersoonsgegevens.nl/en" rel="noopener">Autoriteit Persoonsgegevens</a>).</p>
 
 <h2>Security</h2>
-<p>GRIPON BV takes appropriate measures to prevent misuse, loss, unauthorised access, unwanted disclosure and unauthorised modification. If you have the impression that your data is not properly secured or there are indications of misuse, please contact us at <a href="mailto:ks5515@pm.me">ks5515@pm.me</a>.</p>
+<p>GRIPON BV takes appropriate measures to prevent misuse, loss, unauthorised access, unwanted disclosure and unauthorised modification. If you have the impression that your data is not properly secured or there are indications of misuse, please contact us via <a href="/contact.html">the contact form</a>.</p>
 </main>
-<footer class="footer"><span>&copy; GRIPON BV</span><a href="/privacy-statement.html">Privacy</a><a href="mailto:ks5515@pm.me">ks5515@pm.me</a></footer>
+<footer class="footer"><span>&copy; GRIPON BV</span><a href="/privacy-statement.html">Privacy</a><a href="/contact.html">Contact</a></footer>
 </body>
 </html>
