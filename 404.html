@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404</title>
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+:root{--accent:#ffffff;}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#fff;background:#000;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:.2em}
+
+.top{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.25rem 1.5rem}
+.brand{font-weight:700;letter-spacing:.12em;font-size:.95rem}
+.nav{display:flex;align-items:center;gap:1.5rem;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+.nav .links{display:flex;gap:1.25rem}
+.nav [aria-current]{opacity:.55}
+.nav .lang{opacity:.85}
+.nav .lang a,.nav .lang span{padding:0 .1em}
+
+.footer{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;padding:1.25rem 1.5rem;font-size:.75rem;letter-spacing:.04em;opacity:.7}
+.footer a:hover{opacity:1}
+
+/* Home: fullscreen video */
+.home{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh;overflow:hidden}
+.home .bg{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.home .scrim{position:fixed;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.15) 40%,rgba(0,0,0,.55) 100%)}
+.hero{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding:2rem 1.5rem 3rem;max-width:44rem}
+.hero h1{margin:0 0 .75rem;font-size:clamp(2.25rem,6vw,4.5rem);line-height:1;letter-spacing:-.02em;color:var(--accent)}
+.hero .tagline{margin:0;font-size:clamp(1rem,1.6vw,1.2rem);max-width:36rem;text-shadow:0 1px 12px rgba(0,0,0,.6)}
+
+/* Content pages */
+.page{display:flex;flex-direction:column;min-height:100vh;background:#fff;color:#111}
+.page .footer{margin-top:auto;border-top:1px solid #e5e5e5;opacity:.8}
+.prose{flex:1;max-width:42rem;margin:0 auto;padding:2rem 1.5rem 4rem;font-size:1.02rem}
+.prose h1{font-size:2rem;line-height:1.15;margin:1rem 0 1.5rem;letter-spacing:-.01em}
+.prose h2{font-size:1.15rem;margin:2rem 0 .5rem}
+.prose p{margin:0 0 1rem}
+.prose a{color:var(--accent);filter:saturate(1) brightness(.75);text-decoration:underline}
+.page .prose a{color:#0645ad;filter:none}
+
+@media (max-width:600px){
+  .top{flex-direction:column;align-items:flex-start;gap:.75rem}
+  .nav{gap:1rem}
+}
+@media (prefers-reduced-motion:reduce){.home .bg{display:none}.home{background:#000 url(/media/poster.jpg) center/cover}}
+
+</style>
+
+</head>
+<body class="page"><header class="top"><a class="brand" href="/">GRIPON</a><nav class="nav"><span class="links"><a href="/" >Home</a><a href="/privacy-statement.html" >Privacy</a></span><span class="lang"><a href="https://www.gripon.nl/" hreflang="nl">NL</a> / <span aria-current="true">EN</span></span></nav></header>
+<main class="prose"><h1>404</h1><p><a href="/">Home</a></p></main><footer class="footer"><span>&copy; GRIPON BV</span><a href="/privacy-statement.html">Privacy</a><a href="mailto:ks5515@pm.me">ks5515@pm.me</a></footer></body></html>
